@@ -1,0 +1,24 @@
+#!/bin/bash 
+  
+
+read -p "Entrer votre NOTE svp"  note
+
+if   [[ $note -lt 0  ||  $note -gt 20 ]]
+then
+echo "ERROR" 
+
+elif   [ $note -ge  16 ] ;then
+echo "Trés bien" 
+
+elif  [ $note -ge 14 ];then
+echo "bien"
+
+elif [ $note  -ge 12 ];then
+echo "assez bien" 
+
+elif [ $note -ge 10 ];then
+echo "moyen"
+
+elif [ $note  -lt 10 ];then
+echo "insuffisant" 
+
